@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ComtadorManual.Gui.MainPage"
+             Title="Contador Manual"
+             BackgroundColor="LightGray"
+             >
+
+    <VerticalStackLayout
+        Margin="20"
+        >
+
+        <Label
+            Text="CONTEO:"
+            FontSize="Medium"
+           />
+
+        <Border
+            Stroke="Gray"
+           
+            StrokeThickness="3"
+            Margin="0,24,0,36"
+            >
+            <Label
+            TextColor="Red"
+            Margin="0,24"
+            FontSize="Large"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            Text="0"
+            x:Name="ContadorL"
+     />
+        </Border>
+       
+        <HorizontalStackLayout
+            HorizontalOptions="Center"
+            Spacing="32"
+            >
+            <Button
+            WidthRequest="130"
+            Text="CONTAR"
+            Clicked="Button_Clicked"
+        >
+            </Button>
+            <Button
+            WidthRequest="130"
+        Text="REINICIAR"
+            Clicked="Button_Clicked_1"
+        >
+            </Button>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
